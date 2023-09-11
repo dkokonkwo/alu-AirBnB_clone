@@ -44,7 +44,7 @@ class TestBaseModelClass(unittest.TestCase):
         self.assertEqual(obj2.id, "012345")
         string1 = "2023-09-11 16:33:48.491780"
         self.assertEqual('{}'.format(obj2.created_at), string1)
-        string2 = "2023-09-11T16:35:08.916060"
+        string2 = "2023-09-11 16:35:08.916060"
         self.assertEqual('{}'.format(obj2.updated_at), string2)
 
     def test_str(self):

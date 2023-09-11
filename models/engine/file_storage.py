@@ -34,10 +34,9 @@ class FileStorage:
         """
         if exists(self.__file_path) is False:
             return
-        
+
         from .known_objects import classes
 
-        self.__objects = {}
         with open(FileStorage.__file_path, 'r') as file:
             data = json.load(file)
             for key, obj_data in data.items():

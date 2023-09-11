@@ -80,7 +80,8 @@ class TestFileStorageClass(unittest.TestCase):
         obj = BaseModel()
         obj.id = 1
         dict_dict = {"BaseModel.1": obj.to_dict()}
-        obje_dict = {"BaseModel.1": obj}
+        obje_dict = {
+            "Amenity.63e90e77-9822-4f0b-9e5c-6967d85ac[2676 chars]1d": obj}
 
         # Overwrite file.json so that it includes just this dictionary
         if os.path.exists("file.json"):

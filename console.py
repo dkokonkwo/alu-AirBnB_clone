@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import cmd
+"""console interpreter"""
 
 
 class HBNBCommand(cmd.Cmd):

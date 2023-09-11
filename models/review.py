@@ -8,4 +8,4 @@ class Review(BaseModel):
     """public class attributes"""
     place_id = ""
     user_id = ""
-    text_id = ""
+    text = ""

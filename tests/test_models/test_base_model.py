@@ -42,7 +42,7 @@ class TestBaseModelClass(unittest.TestCase):
         self.assertIsInstance(obj2.updated_at, datetime)
         #  can also test exact values, including formatting of datetimes
         self.assertEqual(obj2.id, "012345")
-        string1 = "2023-09-11T16:33:48.491780"
+        string1 = "2023-09-11 16:33:48.491780"
         self.assertEqual('{}'.format(obj2.created_at), string1)
         string2 = "2023-09-11T16:35:08.916060"
         self.assertEqual('{}'.format(obj2.updated_at), string2)

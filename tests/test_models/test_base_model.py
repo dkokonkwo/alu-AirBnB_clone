@@ -29,8 +29,8 @@ class TestBaseModelClass(unittest.TestCase):
         # create dict to set obj values to with **kwargs
         new_dict = {}
         new_dict["id"] = "012345"
-        new_dict["created_at"] = "1985-2-2T10:23:35.123467"
-        new_dict["updated_at"] = "1999-1-4T7:15:05.543210"
+        new_dict["created_at"] = "2023-09-11T16:33:48.491780"
+        new_dict["updated_at"] = "2023-09-11T16:35:08.916060"
         # created object instance with **kwargs and run testing
         obj2 = BaseModel(**new_dict)
         self.assertIsInstance(obj2, BaseModel)
@@ -42,9 +42,9 @@ class TestBaseModelClass(unittest.TestCase):
         self.assertIsInstance(obj2.updated_at, datetime)
         #  can also test exact values, including formatting of datetimes
         self.assertEqual(obj2.id, "012345")
-        string1 = "1985-2-2T10:23:35.123467"
+        string1 = "2023-09-11 16:33:48.491780"
         self.assertEqual('{}'.format(obj2.created_at), string1)
-        string2 = "1999-1-4T7:15:05.543210"
+        string2 = "2023-09-11 16:35:08.916060"
         self.assertEqual('{}'.format(obj2.updated_at), string2)
 
     def test_str(self):

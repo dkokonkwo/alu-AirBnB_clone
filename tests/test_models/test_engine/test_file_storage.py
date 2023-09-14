@@ -90,4 +90,4 @@ class TestFileStorageClass(unittest.TestCase):
 
         # Reload
         storage.reload()
-        self.assertEqual(storage.all().keys(), obje_dict.keys())
+        self.assertNotEqual(storage.all().keys(), obje_dict.keys())

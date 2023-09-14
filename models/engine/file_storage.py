@@ -29,15 +29,16 @@ class FileStorage:
 
     def reload(self):
         """
-        Deserializes the JSON file to __objects (only if the JSON file (__file_path) exists;
-        otherwise, do nothing. If the file does not exist, no exception should be raised).
+        Deserializes the JSON file to __objects
+        (only if the JSON file (__file_path) exists;
+        otherwise, do nothing. If the file does not exist,
+        no exception should be raised).
         """
         if exists(self.__file_path) is False:
             return
-        
+
         from .known_objects import classes
 
-        self.__objects = {}
         with open(FileStorage.__file_path, 'r') as file:
             data = json.load(file)
             for key, obj_data in data.items():

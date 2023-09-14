@@ -33,7 +33,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_create(self, arguments):
         """
-        creates a new instance of a class and saves it to 
+        creates a new instance of a class and saves it to
         JSON file then prints id
         """
         self.non_interactive_check()

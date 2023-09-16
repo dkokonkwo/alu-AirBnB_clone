@@ -12,7 +12,7 @@ class HBNBCommand(cmd.Cmd):
 
     prompt = '(hbnb) '
 
-@staticmethod
+    @staticmethod
     def non_interactive_check():
         if sys.stdin.isatty() is False:
             print("")

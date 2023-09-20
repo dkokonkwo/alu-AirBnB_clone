@@ -4,9 +4,13 @@ body {
   min-height: 100vh; /* Ensure that the body takes up at least the full viewport height */
   margin: 0;
   padding: 0;
+  color: #484848;
+  font-size: 14px;
+  font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 main {
   flex: 1; /* Allow the main content to grow and fill available space */
   /* padding: 20px; */
+  margin: 0;
 }
